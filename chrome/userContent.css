@@ -1,0 +1,4 @@
+input, textarea, select { color: #000000; background: #ffffff; -moz-appearance: none; }
+input[type=button], input[type=submit] { -moz-appearance: button; }
+input[type=checkbox] { -moz-appearance: checkbox; }
+input[type=radio] { -moz-appearance: radio; }

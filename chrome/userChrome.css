@@ -1,0 +1,6 @@
+#browser-bottombox { height: 20px; border-top: solid 1px #505050; }
+.browserContainer>statuspanel { left: 4px !important; bottom: 0px; transition-duration: 0s !important; transition-delay: 0s !important; }
+.browserContainer>statuspanel>.statuspanel-inner>.statuspanel-label { margin-left: 0px !important; border: none !important; padding: 0px !important; }
+
+window[inFullscreen="true"] #browser-bottombox { display:none !important; }
+window[inFullscreen="true"] .browserContainer>statuspanel[type="overLink"] .statuspanel-label { display:none !important; }
