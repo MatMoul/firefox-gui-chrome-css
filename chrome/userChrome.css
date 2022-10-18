@@ -3,6 +3,7 @@
 	border-top: solid 1px #505050;
 }
 #statuspanel {
+	position: fixed !important;
 	height: 20px !important;
 	width: 100% !important;
 	left: 0px !important;
@@ -12,16 +13,9 @@
 	transition-delay: 0s !important;
 	transition-property: none !important;
 }
-#statuspanel-inner {
-	height: 20px !important;
-}
 #statuspanel-label {
-	top: 0px !important;
-	margin-left: 0px !important;
-	margin-top: 0px !important;
-	border: none !important;
-	padding: 0px !important;
 	background: transparent !important;
+	border: none !important;
 }
 
 html[inFullscreen="true"] #browser-bottombox {
