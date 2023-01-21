@@ -1,3 +1,9 @@
+:root:not([inFullscreen]) #a11y-announcement {
+	/* Kludge to make "a11y-announcement" a replacement for the "browser-bottombox" element removed by FF 109 */
+	display: block !important;
+	background-color: var(--toolbar-bgcolor) !important;
+}
+#a11y-announcement,
 #browser-bottombox {
 	height: 20px;
 	border-top: solid 1px #505050;
@@ -14,13 +20,26 @@
 	transition-property: none !important;
 }
 #statuspanel-label {
+	color: var(--toolbar-color) !important;
 	background: transparent !important;
 	border: none !important;
 }
 
+html[inFullscreen="true"] #a11y-announcement,
 html[inFullscreen="true"] #browser-bottombox {
 	display:none !important;
 }
+
+/* Make status bar invisible when fullscreen */
 html[inFullscreen="true"] #statuspanel {
 	display:none !important;
 }
+/* Make status bar visible (as a pop-up box) when fullscreen */
+/*
+html[inFullscreen="true"] #statuspanel-label {
+	border: 1px solid #505050 !important;
+	padding-left: 2px !important;
+	padding-bottom: 6px !important;
+	background: var(--toolbar-bgcolor) !important;
+}
+*/
