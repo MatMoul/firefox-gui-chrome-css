@@ -1,3 +1,3 @@
 # firefox-gui-chrome-css
-Status bar for Firefox 70+
+Status bar for Firefox 132+
 
