@@ -1,41 +1,42 @@
 var(--toolbar-bgcolor, #2a2e32);
 
 :root:not([inFullscreen]) #a11y-announcement {
-	/* Kludge to make "a11y-announcement" a replacement for the removed "browser-bottombox" element */
-	display: block !important;
-	/* Also give it the right colour - and Mozilla says "opaque for layers optimization" (although this may not apply) */
-	background-color: var(--toolbar-bgcolor) !important;
+  /* Kludge to make "a11y-announcement" a replacement for the removed "browser-bottombox" element */
+  display: block !important;
+  /* Also give it the right colour - and Mozilla says "opaque for layers optimization" (although this may not apply) */
+  background-color: var(--toolbar-bgcolor) !important;
 }
 #browser-bottombox, 
 #a11y-announcement {
-	height: 20px;
-	border-top: solid 1px #505050;
+  height: 20px;
+  border-top: solid 1px #505050;
 }
 #statuspanel {
-	position: fixed !important;
-	height: 20px !important;
-	width: 100% !important;
-	left: 0px !important;
-	bottom: 0px !important;
-	padding: 0px !important;
-	transition-duration: 0s !important;
-	transition-delay: 0s !important;
-	transition-property: none !important;
+  position: fixed !important;
+  height: 20px !important;
+  width: 100% !important;
+  left: 0px !important;
+  bottom: 0px !important;
+  padding: 0px !important;
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+  transition-property: none !important;
 }
 #statuspanel>* {
-	color: var(--toolbar-color) !important;
-	background: transparent !important;
-	border: none !important;
+  color: var(--toolbar-color) !important;
+  background: transparent !important;
+  border: none !important;
+  margin-top: 18px !important;
 }
 
 html[inFullscreen="true"] #browser-bottombox, 
 html[inFullscreen="true"] #a11y-announcement {
-	display:none !important;
+  display:none !important;
 }
-/* Make status text visible - as a pop-up box */
 html[inFullscreen="true"] #statuspanel>* {
-	border: 1px solid #505050 !important;
-	padding-left: 2px !important;
-	padding-bottom: 6px !important;
-	background: var(--toolbar-bgcolor) !important;
+  /* Make status text visible - as a pop-up box */
+  border: 1px solid #505050 !important;
+  padding-left: 2px !important;
+  padding-bottom: 6px !important;
+  background: var(--toolbar-bgcolor) !important;
 }
